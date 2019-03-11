@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContinuousIntegrationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pqp-uh-02m">
+                                <rect key="frame" x="77.5" y="290" width="220" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="oV8-VX-8yF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcO-fH-cXd">
+                                <rect key="frame" x="77.5" y="252" width="220" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRO-rV-A2V">
+                                <rect key="frame" x="142.5" y="328.5" width="90" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="ncN-fI-5mm"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TvO-Cm-iWR"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student info saved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3a-pe-NqJ">
+                                <rect key="frame" x="77.5" y="223" width="220" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p3a-pe-NqJ" firstAttribute="width" secondItem="kcO-fH-cXd" secondAttribute="height" multiplier="22:3" id="3PT-ZU-hbz"/>
+                            <constraint firstItem="cRO-rV-A2V" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Bna-WE-7Fa"/>
+                            <constraint firstItem="cRO-rV-A2V" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="90:667" id="K5J-bY-5n9"/>
+                            <constraint firstItem="p3a-pe-NqJ" firstAttribute="centerX" secondItem="kcO-fH-cXd" secondAttribute="centerX" id="L1L-1E-rbq"/>
+                            <constraint firstItem="cRO-rV-A2V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nnf-Vk-6gh"/>
+                            <constraint firstItem="kcO-fH-cXd" firstAttribute="width" secondItem="Pqp-uh-02m" secondAttribute="width" id="QUP-k3-OoO"/>
+                            <constraint firstItem="kcO-fH-cXd" firstAttribute="top" secondItem="p3a-pe-NqJ" secondAttribute="bottom" constant="8" id="Tln-n7-A4f"/>
+                            <constraint firstItem="kcO-fH-cXd" firstAttribute="width" secondItem="Pqp-uh-02m" secondAttribute="height" multiplier="22:3" id="WxP-SU-ZvT"/>
+                            <constraint firstItem="kcO-fH-cXd" firstAttribute="centerX" secondItem="Pqp-uh-02m" secondAttribute="centerX" id="gnd-sD-jmB"/>
+                            <constraint firstItem="cRO-rV-A2V" firstAttribute="top" secondItem="Pqp-uh-02m" secondAttribute="bottom" constant="8.5" id="gs7-XA-VW8"/>
+                            <constraint firstItem="p3a-pe-NqJ" firstAttribute="width" secondItem="kcO-fH-cXd" secondAttribute="width" id="h8s-5I-I4w"/>
+                            <constraint firstItem="Pqp-uh-02m" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="220:667" id="mVr-jR-eub"/>
+                            <constraint firstItem="Pqp-uh-02m" firstAttribute="top" secondItem="kcO-fH-cXd" secondAttribute="bottom" constant="8" id="ptq-bM-SDK"/>
+                            <constraint firstItem="Pqp-uh-02m" firstAttribute="centerX" secondItem="cRO-rV-A2V" secondAttribute="centerX" id="w2y-la-QGE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="p3a-pe-NqJ" id="dlR-8S-oYm"/>
+                        <outlet property="textFieldFirstName" destination="kcO-fH-cXd" id="n5y-8c-5ZK"/>
+                        <outlet property="textFieldLastName" destination="Pqp-uh-02m" id="7vG-r7-b4N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
