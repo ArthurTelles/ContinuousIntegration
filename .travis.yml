@@ -1,0 +1,5 @@
+os: osx
+osx_image: xcode10.1
+language: swift
+script: 
+  - xcodebuild clean build test -workspace ContinuousIntegrationProject.xcworkspace -scheme "ContinuousIntegrationProject" -sdk iphonesimulator
