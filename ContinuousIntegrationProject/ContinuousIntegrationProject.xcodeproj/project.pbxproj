@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19244D5B22375983001B6DF0 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19244D5A22375983001B6DF0 /* SnapshotHelper.swift */; };
 		1948BFA8223695E800C9CA0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948BFA7223695E800C9CA0E /* AppDelegate.swift */; };
 		1948BFAA223695E800C9CA0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1948BFA9223695E800C9CA0E /* ViewController.swift */; };
 		1948BFAD223695E800C9CA0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1948BFAB223695E800C9CA0E /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19244D5A22375983001B6DF0 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = ../../fastlane/SnapshotHelper.swift; sourceTree = "<group>"; };
 		1948BFA4223695E800C9CA0E /* ContinuousIntegrationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuousIntegrationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1948BFA7223695E800C9CA0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1948BFA9223695E800C9CA0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				1948BFC7223695EA00C9CA0E /* ContinuousIntegrationProjectUITests.swift */,
+				19244D5A22375983001B6DF0 /* SnapshotHelper.swift */,
 				1948BFC9223695EA00C9CA0E /* Info.plist */,
 			);
 			path = ContinuousIntegrationProjectUITests;
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1948BFC8223695EA00C9CA0E /* ContinuousIntegrationProjectUITests.swift in Sources */,
+				19244D5B22375983001B6DF0 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

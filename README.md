@@ -108,7 +108,7 @@ fastline screenshot
 ```
 this will atomatically run your UI tests and take the screenshots wherever you've put the command lines of step 5.
 
-#### Obs.: A Good thing to do is to configure the `Snapfile`, so you will only do the necessary tests in the devices you have configured for your project. The `Snapfile` can be found inside the `fastlane` folder created in your project.
+#### Obs.: A Good thing to do is to configure the `Snapfile` file, so you will only do the necessary tests in the devices you have configured for your project, this will save you even more time since the fastlane will only run the necessary simulators. The `Snapfile` can be found inside the `fastlane` folder created in your project.
 
 -----
 

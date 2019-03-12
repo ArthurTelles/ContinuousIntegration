@@ -13,8 +13,11 @@ class ContinuousIntegrationProjectUITests: XCTestCase {
     override func setUp()
     {
         continueAfterFailure = false
-        
         XCUIApplication().launch()
+        
+        let app = XCUIApplication()
+        setupSnapshot(app)
+        app.launch()
     }
     
     func testValidName()
@@ -53,6 +56,8 @@ class ContinuousIntegrationProjectUITests: XCTestCase {
         sKey.tap()
         
         app.buttons["Save"].tap()
+        
+        snapshot("Valid Test")
     }
     
     func testInvalidName()
@@ -86,6 +91,9 @@ class ContinuousIntegrationProjectUITests: XCTestCase {
         
         let dKey = app/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         dKey.tap()
+        
         app.buttons["Save"].tap()
+        
+        snapshot("Invalid Test")
     }
 }
